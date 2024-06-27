@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using PageObjectLib.Factories;
 using SalesSoftTest.Helpers;
 using SalesSoftTest.Pages;
@@ -9,15 +10,21 @@ namespace SalesSoftTest.Tests
 {
     internal class CreateAccountTest : BaseTest
     {
-        [Test]
-        public void CreateAccountTest1()
+        [TestCase("accountname")]
+        public void CreateAccountTest1(string name)
         {
             HomePage.AccountsButton.ClickMenuButton();
             Closer.CloseHomeTab();
             AccountPage.CreateNewAccount();
-            AccountPage.NameField.InputDataToField("name");
+            AccountPage.NameField.InputDataToField(name);
             AccountPage.SiteField.InputDataToField("site");
             AccountPage.DescriptionField.InputDataToField("description");
+
+            AccountPage.TypeField.InputDataToField("Analyst");
+
+            AccountPage.CreateNewAccount();
+
+            Assert.That(name, Is.EqualTo(AccountPage.GetAccountName()));
         }
     }
 }

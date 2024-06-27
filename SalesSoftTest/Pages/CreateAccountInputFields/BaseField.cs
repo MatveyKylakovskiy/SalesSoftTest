@@ -6,7 +6,7 @@ namespace SalesSoftTest.Pages.CreateAccountInputFields
     internal class BaseField
     {
         protected string? inputFieldLocator { get; init; }
-        private WebElements InputField() => new(By.XPath($"//*[text()='{inputFieldLocator}']/following-sibling::*"));
+        private WebElements InputField() => new(By.XPath($"//*[text()='{inputFieldLocator}']/following-sibling::*/child::*"));
 
         public void InputDataToField(string data) => InputField().SendValue(data);
     }
