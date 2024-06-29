@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using PageObjectLib.Elements;
 using PageObjectLib.Factories;
-using SalesSoftTest.Pages.CreateAccountInputFields;
+using SalesSoftTest.Pages.InputFields.CreateAccountInputFields;
 using SalesSoftTest.Pages.NavigateMenu;
 using SeleniumExtras.WaitHelpers;
 

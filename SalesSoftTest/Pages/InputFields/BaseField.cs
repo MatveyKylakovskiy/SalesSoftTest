@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using PageObjectLib.Elements;
 
-namespace SalesSoftTest.Pages.CreateAccountInputFields
+namespace SalesSoftTest.Pages.InputFields
 {
     internal class BaseField
     {

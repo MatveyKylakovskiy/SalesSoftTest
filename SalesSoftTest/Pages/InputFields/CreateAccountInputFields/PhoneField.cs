@@ -1,5 +1,4 @@
-﻿
-namespace SalesSoftTest.Pages.CreateAccountInputFields
+﻿namespace SalesSoftTest.Pages.InputFields.CreateAccountInputFields
 {
     internal class PhoneField : BaseField
     {
