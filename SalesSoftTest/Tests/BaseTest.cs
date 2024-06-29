@@ -19,7 +19,3 @@ namespace SalesSoftTest.Tests
         }
     }
 }
-
-
-/*egoaesu - ldqe@force.com
-7Wy7cm2ZAM9qRKS№%*/
